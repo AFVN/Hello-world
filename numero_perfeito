@@ -1,0 +1,12 @@
+def numero_perfeito(num):
+    e = 0
+    for i in range(num):
+        if(i > 0):
+            if(num % i == 0):
+            	e =  e + i
+            	if(e == num):
+            		return True
+
+num = 28
+if(numero_perfeito(num)):
+	print("True")
